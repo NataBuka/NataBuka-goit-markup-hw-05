@@ -23,7 +23,7 @@
 
 /*   reset  */
 body {
-  padding-top: 80px;
+  /* padding-top: 80px;*/
   margin: 0px;
   color: var(--basc-text-color);
   font-family: Roboto, sans-serif;
@@ -123,9 +123,9 @@ img {
 }
 
 .header {
-  position: fixed;
+  /* position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 100;*/
   top: 0;
   left: 0;
 
@@ -189,10 +189,7 @@ img {
 }
 
 .header-link {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--black-color);
   text-decoration: none;
   font-weight: 500;
@@ -202,9 +199,7 @@ img {
 }
 
 .contact {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   color: inherit;
@@ -280,9 +275,7 @@ img {
   padding: 10px 20px;
   min-width: 200px;
   text-align: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover {
@@ -466,10 +459,8 @@ img {
   color: var(--border-klient-color);
   justify-content: center;
   align-items: center;
-  transition-property: fill;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-imail {
   display: flex;
@@ -504,9 +495,7 @@ img {
   border-radius: 4px;
   background-position: center;
   color: var(--border-klient-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:not(:last-child) {
@@ -545,9 +534,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list {
@@ -598,9 +585,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-map:focus,
@@ -622,9 +607,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-imail-svg {
@@ -703,11 +686,9 @@ img {
 /* buttons */
 
 .filter-buttom {
-  transition-property: background-color;
-  transition-property: shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-  transition-duration: 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
   border: 1px solid #eeeeee;
   border-radius: 4px;
